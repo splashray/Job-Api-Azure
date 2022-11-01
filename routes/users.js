@@ -8,7 +8,7 @@ const router = express.Router()
 router.get("/", verifyToken, verifyAdmin, getAllUser)
 
 //get particular user information
-router.get("/:id", verifyToken, verifyAdmin, getUser)
+router.get("/:id", verifyToken, getUser)
 
 //delete all information user 
 router.delete("/:id", verifyToken, verifyAdmin, DeleteUser)

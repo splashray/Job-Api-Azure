@@ -10,7 +10,7 @@ router.post("/", verifyToken, verifyAdmin, createJob)
 router.get("/", getAllJob)
 
 //get particular job information
-router.get("/:id", verifyToken, getJob)
+router.get("/:id", getJob)
 
 //delete all information job 
 router.delete("/:id", verifyToken, verifyAdmin, DeleteJob)
